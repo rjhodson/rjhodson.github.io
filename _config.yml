@@ -37,4 +37,6 @@ last_name: Hodson
 
 baseurl: ''
 
+# https://stackoverflow.com/questions/28249255/how-do-i-configure-github-to-use-non-supported-jekyll-site-plugins
+
 theme: jekyll-theme-tactile
