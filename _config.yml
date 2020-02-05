@@ -34,4 +34,7 @@ exclude:
 
 first_name: Richard
 last_name: Hodson
+
+baseurl: ''
+
 theme: jekyll-theme-tactile
