@@ -73,6 +73,10 @@
     @apply mt-1 mb-2;
 }
 
+.content-wrapper, .resume-section {
+    transition: background-color .25s, color .25s;
+}
+
 /* Write your styles above this line. */
 
 @tailwind utilities;
