@@ -1,0 +1,154 @@
+---
+layout: default
+title: Resume
+---
+
+<!-- Summary -->
+<section class="resume-section my-2">
+  <h2 class="rs-title">Summary</h2>
+  <div class="rs-body">
+    {{ site.data.resume.summary.body }}
+  </div>
+</section>
+
+<div class="md:flex my-2">
+  <!-- Skills -->
+  <section class="resume-section md:flex-1 md:mr-1">
+      <h2 class="rs-title">Skills</h2>
+      <div class="rs-body">
+        <ul class="unordered">
+          {% for item in site.data.resume.skills %}
+              <li class="my-2">
+                  {{ item.body | markdownify }}
+              </li>
+          {% endfor %}
+        </ul>
+      </div>
+  </section>
+
+  <!-- Tools -->
+  <section class="resume-section md:flex-1 md:ml-1 my-2 md:my-0">
+      <h2 class="rs-title">Familiarities</h2>
+      <div class="rs-body">
+        <div class="lg:flex">
+          {% for tools in site.data.resume.tools %}
+            <div class="lg:flex-1">
+              {% for section in tools.group %}
+                <div class="mb-4">
+                  <h3 class="rs-subtitle">{{ section.name }}</h3>
+                  <ul class="unordered">
+                    {% for tool in section.items %}
+                      <li>
+                        <p>{{ tool }}</p>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              {% endfor %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+  </section>
+</div>
+
+<!-- Experience -->
+<section class="resume-section my-2">
+  <h2 class="rs-title">Experience</h2>
+  <div class="rs-body">
+    {% for career in site.data.resume.careers %}
+        <div class="mb-6">
+          <div class="flex border-b border-gray-300">
+            <div class="flex-grow">
+              <h3 class="rs-subtitle">{{ career.title }}</h3>
+              <em class="text-xs">{{ career.org }}</em>
+            </div>
+            <div class="flex-none">
+              {{ career.start }}-{{ career.end }}
+            </div>
+          </div>
+          {% if career.description %}
+            <div class="section-description">
+              {{ career.description | markdownify }}
+            </div>
+          {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- Education -->
+<section class="resume-section my-2">
+  <h2 class="rs-title">Education</h2>
+  <div class="rs-body">
+    {% for degree in site.data.resume.education %}
+      <div class="mb-6">
+        <div class="flex border-b border-gray-300">
+          <div class="flex-grow">
+            <h3 class="rs-subtitle">{{ degree.name }}</h3>
+            <em class="text-xs">{{ degree.school }}</em>
+          </div>
+          <div class="flex-none">
+            {{ degree.start }}-{{ degree.end }}
+          </div>
+        </div>
+
+        {% if degree.coursework %}
+          <div class="my-2">
+            <h4 class="text-copy-title text-xs font-bold">Interesting Coursework</h4>
+            <div class="md:flex">
+              {% for courses in degree.coursework %}
+                <ul class="unordered md:flex-1">
+                  {% for course in courses.column %}
+                    <li>
+                      <p>{{ course }}</p>
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+
+        {% if degree.facts %}
+        <div class="my-2">
+          <h4 class="text-copy-title text-xs font-bold">Projects and Memberships</h4>
+          <ul class="unordered">
+            {% for fact in degree.facts %}
+              <li>
+                {{ fact | markdownify }}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- Awards -->
+<section class="resume-section my-2">
+  <h2 class="rs-title">Awards and Honors</h2>
+  <div class="rs-body">
+    {% for award in site.data.resume.awards %}
+      <div class="mb-6">
+        <div class="flex container">
+          <div class="flex-grow">
+            <h3 class="rs-subtitle">{{ award.name }}</h3>
+            <em class="text-xs">{{ award.org }}</em>
+          </div>
+          <div class="flex-none">
+            {{ award.date }}
+          </div>
+        </div>
+        {% if award.description %}
+          <div class="section-description">
+            {{ award.description | markdownify }}
+          </div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</section>

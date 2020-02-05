@@ -1,0 +1,19 @@
+- title: Senior Web Developer
+  org: NC State University
+  start: August 2007
+  end: Present
+  description: |-
+    Primary developer and support for GradWatch, a NC State University graduate student life-cycle management system. Provides users with the ability to track their students and gauge student overall statistics.
+
+    Data manager and support for WolfTech Identity Management System, which is the system-of-record for the campus domain’s Active Directory.
+
+    Lead developer and support for Billboard, the central management system for displaying signage on computer kiosks and web-enabled digital signs throughout the NC State University campus. Billboard is integrated with WolfAlert (an emergency alert system powered by Rave Mobile Safety) to additionally act as an emergency alert system for campus-wide emergencies.
+
+    Developer, data manager, and support for numerous other web applications and information sources. Additional web applications I have developed, worked on, and/or upgraded include a global directory for telepresence systems, a grade distribution retrieval system, an interactive DNS/DHCP management analytics and statistics system, and much more.
+
+- title: IT Support
+  org: NC State University
+  start: October 2005
+  end: August 2007
+  description: |-
+    Maintained and periodically upgraded the Engineering Entrepreneurs Program website and portal based on faculty and student response.

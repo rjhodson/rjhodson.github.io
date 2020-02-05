@@ -1,0 +1,37 @@
+- name: MS, Electrical Engineering
+  school: NC State University
+  start: 2008
+  end: 2012
+  coursework:
+  - column:
+    - Robotics
+    - Embedded System Design
+    - Human-Computer Interactions
+  - column:
+    - Artificial Neural Networks
+    - Neural Interfaces
+  - column:
+    - Medical Instrumentation
+    - Signal Processing
+  facts:
+  - Created a wall-crawling autonomous robot that followed and inspected a path of rivets on a plane.  The robot had the ability to have key parameters and thresholds set from and be controlled by a remote computer.
+  - Developed a joystick controlled automatic foam dart gun using a Renesas development board and H-Bridge driver circuit.
+  - Made a wearable facial twitch sensor that communicated via Bluetooth 3.0 with a Java application running on a remote computer. The project utilized MSP430 MCUs due to their low power operation mode.
+
+- name: BS, Electrical Engineering & BS, Computer Engineering
+  school: NC State University
+  start: 2001
+  end: 2005
+  coursework:
+  - column:
+    - Mechatronics
+    - Digital Systems Interfacing
+  - column:
+    - Elements of Control
+    - Microelectronics
+  - column:
+    - Design of Complex Digital Systems
+    - Analog Devices
+  facts:
+  - Senior design consisted of designing a product with a working prototype along with a virtual company for the Engineering Entrepreneurs Program (EEP - http://eep.ncsu.edu/).  For my project, I chose to create a tactical robotic assistant to military and law enforcement.
+  - Student Member of IEEE; Member of Honors Program.

@@ -1,0 +1,42 @@
+- group:
+  - name: IDEs & Code Editors
+    items:
+    - VS Code
+    - Sublime Text 2
+    - Eclipse
+
+  - name: Database Management Apps
+    items:
+    - HeidiSQL
+    - Sequel Pro
+    - Oracle SQL Developer
+    - Softerra LDAP Browser
+
+  - name: Frameworks & Libraries
+    items:
+    - Laravel
+    - Vue
+    - jQuery
+    - AngularJS
+    - Bootstrap
+    - TailwindCSS
+
+- group:
+  - name: Cloud Environments
+    items:
+    - Amazon Web Services (AWS)
+    - Google Cloud Platform (GCP)
+    - RedHat OpenShift
+    - Alexa Developer Console
+
+  - name: Revisioning
+    items:
+    - GitHub
+    - Git
+
+  - name: Ticketing Systems
+    items:
+    - ServiceNow
+    - GitHub Issues
+    - BMC Remedy
+
