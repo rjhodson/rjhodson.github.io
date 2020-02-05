@@ -16,7 +16,8 @@ module.exports = {
           'body' : 'var(--text-copy-body)',
           'title' : 'var(--text-copy-title)',
           'sub' : 'var(--text-copy-sub)',
-          'accent' : 'var(--text-copy-accent)'
+          'accent' : 'var(--text-copy-accent)',
+          'muted' : 'var(--text-copy-muted)',
         }
       },
       fontSize: {
