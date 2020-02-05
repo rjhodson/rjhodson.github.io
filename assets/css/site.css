@@ -18,6 +18,14 @@
     --text-copy-title: #4A5568; /* gray-700 */
     --text-copy-sub: #276749; /* green-800 */
     --text-copy-accent: #48BB78; /* green-500 */
+
+    .light-switch {
+        @apply hidden;
+    }
+
+    .dark-switch {
+        @apply block;
+    }
 }
 
 .theme-dark {
@@ -31,6 +39,14 @@
     --text-copy-title: #EDF2F7; /* gray-200 */
     --text-copy-sub: #68D391; /* green-400 */
     --text-copy-accent: #48BB78; /* green-500 */
+
+    .light-switch {
+        @apply block;
+    }
+
+    .dark-switch {
+        @apply hidden;
+    }
 }
 
 .nav-link {
@@ -73,8 +89,10 @@
     @apply mt-1 mb-2;
 }
 
-.content-wrapper, .resume-section {
-    transition: background-color .25s, color .25s;
+.content-wrapper {
+    &, .resume-section {
+        transition: background-color .25s, color .25s;
+    }
 }
 
 /* Write your styles above this line. */
