@@ -6,7 +6,8 @@ module.exports = {
       colors: {
         background : {
           'primary': 'var(--bg-background-primary)',
-          'secondary': 'var(--bg-background-secondary)'
+          'secondary': 'var(--bg-background-secondary)',
+          'separator': 'var(--bg-background-separator)'
         },
         name : {
           'first' : 'var(--text-name-first)',
@@ -31,6 +32,8 @@ module.exports = {
       }
     },
   },
-  variants: {},
+  variants: {
+    margin: ['responsive', 'last']
+  },
   plugins: []
 }

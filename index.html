@@ -7,7 +7,7 @@ title: Resume
 <section class="resume-section my-2">
   <h2 class="rs-title">Summary</h2>
   <div class="rs-body">
-    {{ site.data.resume.summary.body }}
+    {{ site.data.resume.summary.body | markdownify | strip }}
   </div>
 </section>
 
@@ -19,7 +19,7 @@ title: Resume
         <ul class="unordered">
           {% for item in site.data.resume.skills %}
               <li class="my-2">
-                  {{ item.body | markdownify }}
+                  {{ item.body | markdownify | strip }}
               </li>
           {% endfor %}
         </ul>
@@ -57,19 +57,19 @@ title: Resume
   <h2 class="rs-title">Experience</h2>
   <div class="rs-body">
     {% for career in site.data.resume.careers %}
-        <div class="mb-6">
-          <div class="flex border-b border-gray-300">
-            <div class="flex-grow">
+        <div class="mb-8 last:mb-4">
+          <div class="block md:flex border-b border-background-separator">
+            <div class="md:flex-grow">
               <h3 class="rs-subtitle">{{ career.title }}</h3>
               <em class="text-xs">{{ career.org }}</em>
             </div>
-            <div class="flex-none">
+            <div class="md:flex-none mb-2">
               {{ career.start }}-{{ career.end }}
             </div>
           </div>
           {% if career.description %}
             <div class="section-description">
-              {{ career.description | markdownify }}
+              {{ career.description | markdownify | strip }}
             </div>
           {% endif %}
       </div>
@@ -82,13 +82,13 @@ title: Resume
   <h2 class="rs-title">Education</h2>
   <div class="rs-body">
     {% for degree in site.data.resume.education %}
-      <div class="mb-6">
-        <div class="flex border-b border-gray-300">
-          <div class="flex-grow">
+      <div class="mb-8 last:mb-4">
+        <div class="block md:flex border-b border-background-separator">
+          <div class="md:flex-grow">
             <h3 class="rs-subtitle">{{ degree.name }}</h3>
             <em class="text-xs">{{ degree.school }}</em>
           </div>
-          <div class="flex-none">
+          <div class="md:flex-none mb-2">
             {{ degree.start }}-{{ degree.end }}
           </div>
         </div>
@@ -116,7 +116,7 @@ title: Resume
           <ul class="unordered">
             {% for fact in degree.facts %}
               <li>
-                {{ fact | markdownify }}
+                {{ fact | markdownify | strip }}
               </li>
             {% endfor %}
           </ul>
@@ -133,19 +133,19 @@ title: Resume
   <h2 class="rs-title">Awards and Honors</h2>
   <div class="rs-body">
     {% for award in site.data.resume.awards %}
-      <div class="mb-6">
-        <div class="flex container">
-          <div class="flex-grow">
+      <div class="mb-8 last:mb-4">
+        <div class="block md:flex container">
+          <div class="md:flex-grow">
             <h3 class="rs-subtitle">{{ award.name }}</h3>
             <em class="text-xs">{{ award.org }}</em>
           </div>
-          <div class="flex-none">
+          <div class="md:flex-none mb-2">
             {{ award.date }}
           </div>
         </div>
         {% if award.description %}
           <div class="section-description">
-            {{ award.description | markdownify }}
+            {{ award.description | markdownify | strip }}
           </div>
         {% endif %}
       </div>
