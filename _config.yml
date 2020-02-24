@@ -31,6 +31,10 @@ exclude:
   - netlify.toml
   - bin
   - .gitignore
+  - vendor
+  - LICENSE
+  - Rakefile
+  - .travis.yml
 
 first_name: Richard
 last_name: Hodson
