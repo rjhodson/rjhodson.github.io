@@ -44,5 +44,3 @@ baseurl: ''
 # https://stackoverflow.com/questions/28249255/how-do-i-configure-github-to-use-non-supported-jekyll-site-plugins
 
 keep_files: [.git, .nojekyll, CNAME]
-
-theme: jekyll-theme-tactile
