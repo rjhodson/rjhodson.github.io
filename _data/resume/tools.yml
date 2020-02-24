@@ -20,14 +20,16 @@
     - AngularJS
     - Bootstrap
     - TailwindCSS
+    - Jekyll
 
 - group:
-  - name: Cloud Environments
+  - name: Cloud Environments & Services
     items:
     - Amazon Web Services (AWS)
     - Google Cloud Platform (GCP)
     - RedHat OpenShift
     - Alexa Developer Console
+    - Travis CI
 
   - name: Revisioning
     items:
