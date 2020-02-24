@@ -1,8 +1,14 @@
 language: ruby
 rvm:
-- 2.3.1
+- 2.5.1
+cache:
+  bundler: true
+  yarn: true
+  directories:
+    - node_modules
 install:
 - bundle install
+- yarn install
 deploy:
   provider: pages
   skip_cleanup: true
