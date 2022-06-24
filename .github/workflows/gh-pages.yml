@@ -10,6 +10,9 @@ jobs:
     steps:
     - name: 📂 setup
       uses: actions/checkout@v3
+      
+    - name: 💎 setup ruby
+      uses: ruby/setup-ruby@v1.110.0
 
     - name: 🔨 install dependencies & build site
       uses: limjh16/jekyll-action-ts@v2
