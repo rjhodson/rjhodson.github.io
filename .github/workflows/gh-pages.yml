@@ -13,6 +13,8 @@ jobs:
       
     - name: 💎 setup ruby
       uses: ruby/setup-ruby@v1.110.0
+      with:
+        ruby-version: default
 
     - name: 🔨 install dependencies & build site
       uses: limjh16/jekyll-action-ts@v2
