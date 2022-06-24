@@ -1,6 +1,11 @@
 // const { colors } = require('tailwindcss/defaultTheme')
 
 module.exports = {
+  content: [
+    './index.html',
+    './_includes/header.html',
+    './_layouts/**/*.html',
+  ],
   theme: {
     extend: {
       colors: {

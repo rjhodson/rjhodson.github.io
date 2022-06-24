@@ -39,6 +39,9 @@ exclude:
 first_name: Richard
 last_name: Hodson
 
+postcss:
+  cache: false
+
 baseurl: ''
 
 # https://stackoverflow.com/questions/28249255/how-do-i-configure-github-to-use-non-supported-jekyll-site-plugins
