@@ -1,6 +1,7 @@
 - group:
   - name: IDEs & Code Editors
     items:
+    - PhpStorm
     - VS Code
     - Sublime Text 2
     - Eclipse
