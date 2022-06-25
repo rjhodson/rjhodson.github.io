@@ -18,7 +18,7 @@ title: Resume
       <div class="rs-body">
         <ul class="unordered">
           {% for item in site.data.resume.skills %}
-              <li class="my-2">
+              <li class="my-3">
                   {{ item.body | markdownify | strip }}
               </li>
           {% endfor %}
@@ -100,7 +100,7 @@ title: Resume
               {% for courses in degree.coursework %}
                 <ul class="unordered md:flex-1">
                   {% for course in courses.column %}
-                    <li>
+                    <li class="pb-0.5">
                       <p>{{ course }}</p>
                     </li>
                   {% endfor %}
@@ -115,7 +115,7 @@ title: Resume
           <h4 class="text-copy-title text-xs font-bold">Projects and Memberships</h4>
           <ul class="unordered">
             {% for fact in degree.facts %}
-              <li>
+              <li class="pb-1">
                 {{ fact | markdownify | strip }}
               </li>
             {% endfor %}

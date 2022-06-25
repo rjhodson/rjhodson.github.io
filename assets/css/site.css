@@ -70,7 +70,7 @@
 }
 
 .rs-body {
-    @apply p-3 pt-1 text-sm text-copy-body;
+    @apply p-3 pt-1 text-sm leading-5 text-copy-body;
 }
 
 .rs-subtitle {
@@ -90,7 +90,7 @@
 }
 
 .section-description>p {
-    @apply mt-1 mb-2;
+    @apply mt-1 mb-3;
 }
 
 .content-wrapper {
