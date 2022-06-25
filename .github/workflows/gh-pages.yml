@@ -17,6 +17,15 @@ jobs:
         ruby-version: 2.7
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
 
+    - name:  setup Node
+      uses: actions/setup-node@v3.3.0
+      with:
+        node-version: 14
+        cache: 'yarn'
+        
+    - name: 🧶 Install Yarn dependencies
+      run: yarn install --frozen-lockfile
+  
     - name: 🔨 install dependencies & build site
       uses: limjh16/jekyll-action-ts@v2
       with:
