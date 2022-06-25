@@ -93,6 +93,12 @@
     @apply mt-1 mb-3;
 }
 
+.skills {
+    strong {
+        @apply text-copy-sub;
+    }
+}
+
 .content-wrapper {
     &, .resume-section {
         transition: background-color .25s, color .25s;

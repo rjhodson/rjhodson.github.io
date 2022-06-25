@@ -9,6 +9,7 @@
   - name: Database Management Apps
     items:
     - HeidiSQL
+    - TablePlus
     - Sequel Pro
     - Oracle SQL Developer
     - Softerra LDAP Browser
@@ -17,10 +18,10 @@
     items:
     - Laravel
     - Vue
-    - jQuery
     - AngularJS
-    - Bootstrap
+    - jQuery
     - TailwindCSS
+    - Bootstrap
     - Jekyll
 
 - group:
@@ -30,6 +31,7 @@
     - Google Cloud Platform (GCP)
     - RedHat OpenShift
     - Alexa Developer Console
+    - GitHub Actions
     - Travis CI
 
   - name: Revisioning

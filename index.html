@@ -16,7 +16,7 @@ title: Resume
   <section class="resume-section md:flex-1 md:mr-1">
       <h2 class="rs-title">Skills</h2>
       <div class="rs-body">
-        <ul class="unordered">
+        <ul class="unordered skills">
           {% for item in site.data.resume.skills %}
               <li class="my-3">
                   {{ item.body | markdownify | strip }}
