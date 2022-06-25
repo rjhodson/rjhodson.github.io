@@ -3,8 +3,9 @@
 module.exports = {
   content: [
     './index.html',
+    './assets/js/main.js',
     './_includes/header.html',
-    './_layouts/**/*.html',
+    './_layouts/*.html',
   ],
   theme: {
     extend: {
@@ -36,9 +37,6 @@ module.exports = {
         '96': '24rem'
       }
     },
-  },
-  variants: {
-    margin: ['responsive', 'last']
   },
   plugins: []
 }

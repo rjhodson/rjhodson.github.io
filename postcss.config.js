@@ -4,5 +4,6 @@ module.exports = {
     require('tailwindcss/nesting'),
     require("tailwindcss")("./_includes/tailwind.config.js"),
     require("autoprefixer"),
+    ...(process.env.JEKYLL_ENV == "production" ? [require("cssnano")] : [])
   ]
 };
